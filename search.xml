@@ -1,13 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>STL_vector</title>
-    <url>/lidrizzle.github.oi/2024/05/24/STL-vector/</url>
-    <content><![CDATA[<h1>
-   <center>《vector》篇</center> 
-</h1>
+    <title>Hello World</title>
+    <url>/lidrizzle.github.oi/2024/05/24/STL/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>*** vector中的容量变化为：增长策略对不同编译器或库是不同的。***</p>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>cstring_STL</title>
+    <url>/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><h1 id="《cstring》篇"><a href="#《cstring》篇" class="headerlink" title="《cstring》篇"></a>《cstring》篇</h1><h2 id="1-操作函数"><a href="#1-操作函数" class="headerlink" title="1.操作函数"></a>1.操作函数</h2><h3 id="1-substr-pos-len"><a href="#1-substr-pos-len" class="headerlink" title="1.  substr(pos, len)"></a>1.  substr(pos, len)</h3><blockquote>
+<p>返回值：string，从pos开始的len个字符的拷贝</p>
+<p>pos：默认0</p>
+<p>len：默认s.size() - 1, 也就是到最后了</p>
+</blockquote>
+<p>如果最后取不到len长度的字符串，则只取剩余的所有字串</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    string a = <span class="string">&quot;ac&quot;</span>;</span><br><span class="line">    a += <span class="string">&quot;w&quot;</span>;<span class="comment">//支持比较操作符&gt;,&gt;=,&lt;,&lt;=,==,!=</span></span><br><span class="line">    cout &lt;&lt; a &lt;&lt; endl; <span class="comment">//输出子串a :acw</span></span><br><span class="line"></span><br><span class="line">    a += <span class="string">&quot;ing&quot;</span>;  </span><br><span class="line">    cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//以字符串数组理解</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">3</span>) &lt;&lt; endl; <span class="comment">//当第一个数是0 则后一位数:输出从头开始的长度为3的子串</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">3</span>) &lt;&lt; endl; <span class="comment">//当第一个数是1 则输出下标为1 到下标为3的子串  </span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">9</span>) &lt;&lt; endl;<span class="comment">//如果超出长度范围 则输出原子串</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">1</span>) &lt;&lt; endl; <span class="comment">//从下标为1开始输出</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>) &lt;&lt; endl; <span class="comment">//原子串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, a.<span class="built_in">c_str</span>());<span class="comment">//如果用printf输出  </span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-transform-first-last-result-op"><a href="#2-transform-first-last-result-op" class="headerlink" title="2.  transform(first, last, result, op);"></a>2.  transform(first, last, result, op);</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">作用：将某操作应用于指定范围的每个元素。</span><br><span class="line"></span><br><span class="line">first：容器首迭代器ffffflast：容器末迭代器sssssssssssfffffffffFDff</span><br><span class="line"></span><br><span class="line">op：操作的一元 n</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">first1：第一个容器首迭代器</span><br><span class="line"></span><br><span class="line">last1：末迭代器</span><br><span class="line"></span><br><span class="line">first2： 第二个容器的首迭代器</span><br><span class="line"></span><br><span class="line">result：存放结果的容器</span><br><span class="line"></span><br><span class="line">binary_op：要进行操作的二元函数对象</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//将字符串小写字母改大写，将结果保存在second数组中</span></span><br><span class="line"><span class="built_in">transform</span>(first1.<span class="built_in">begin</span>(), first1.<span class="built_in">end</span>(), first2.<span class="built_in">begin</span>(), ::tolower);</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-find-a-b-c-d"><a href="#3-find-a-b-c-d" class="headerlink" title="3. find(a, b,  c, d)"></a>3. find(a, b,  c, d)</h3><blockquote>
+<p> s.rfind(str)： 是从字符串右侧开始匹配str，并返回在字符串中的下标位置；</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">(string s)</span> </span>&#123; <span class="comment">//在母串s中找字串subs的个数</span></span><br><span class="line">	<span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">	string subs = <span class="string">&quot;chuanzhi&quot;</span>;</span><br><span class="line">	<span class="type">int</span> ind = <span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> len = subs.<span class="built_in">size</span>();</span><br><span class="line">	<span class="keyword">while</span> (s.<span class="built_in">find</span>(subs, ind) != <span class="number">-1</span>) &#123; <span class="comment">// string::npos</span></span><br><span class="line">		cnt ++;</span><br><span class="line">		ind = s.<span class="built_in">find</span>(subs, ind) + len;<span class="comment">// 核心</span></span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; cnt &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//string中find()返回值是字母在母串中的下标位置。</span></span><br><span class="line"><span class="comment">//s.find（str，pos）</span></span><br><span class="line"><span class="comment">//find(str,pos)是用来寻找从pos开始(包括pos处字符)匹配str的位置</span></span><br><span class="line"><span class="comment">//如果没有找到，那么会返回一个特别的标记npos，一般写作string::npos。</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>find_first_of()函数</strong></p>
+<p><strong>正向查找在原字符串中第一个与指定字符串（或字符）中的某个字符匹配的字符</strong></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">find_first_of</span>(<span class="type">char</span>);一般是用来找单个字符，参数也可以是字符串类型；</span><br><span class="line"></span><br><span class="line">如：subs = <span class="string">&quot;chuanzhi&quot;</span>; s = <span class="string">&quot;welcometochangzhi&quot;</span>;</span><br><span class="line">则:s.<span class="built_in">find_first_of</span>(subs)，如果是字符串，则找的是，s中最先出现subs中字符的位置</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-insert"><a href="#4-insert" class="headerlink" title="4. insert()"></a>4. insert()</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 尾插一个字符</span></span><br><span class="line">    a.<span class="built_in">push_back</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"><span class="comment">// insert(pos,char):在制定的位置pos前插入字符char</span></span><br><span class="line">    a.<span class="built_in">insert</span>(a.<span class="built_in">begin</span>(),<span class="string">&#x27;1&#x27;</span>); <span class="comment">//输出 1a</span></span><br><span class="line">  <span class="comment">//插入字符串</span></span><br><span class="line">  string str2=<span class="string">&quot;hello&quot;</span>;</span><br><span class="line">    string s2=<span class="string">&quot;weakhaha&quot;</span>;</span><br><span class="line">    str2.<span class="built_in">insert</span>(<span class="number">0</span>,s2,<span class="number">1</span>,<span class="number">3</span>);</span><br><span class="line"><span class="comment">//将字符串s2从下标为1的e开始数3个字符，分别是eak，插入原串的下标为0的字符h前    </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="5-c-str"><a href="#5-c-str" class="headerlink" title="5.c_str()"></a>5.c_str()</h5><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 返回这个string对应的字符数组的头指针</span></span><br><span class="line">string s = <span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s&quot;</span>, s.<span class="built_in">c_str</span>()); <span class="comment">//输出 &quot;Hello World!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-接收字符串方法"><a href="#2-接收字符串方法" class="headerlink" title="2.接收字符串方法"></a>2.接收字符串方法</h2><h3 id="2-1-cin-str-字符串"><a href="#2-1-cin-str-字符串" class="headerlink" title="2.1  cin(str)字符串"></a>2.1  cin(str)字符串</h3><blockquote>
+<p>作用：可接受单词字符，串遇空格停止</p>
+</blockquote>
+<h3 id="2-2-getline-cin-str"><a href="#2-2-getline-cin-str" class="headerlink" title="2.2  getline(cin, str)"></a>2.2  getline(cin, str)</h3><blockquote>
+<p>作用：接受一行字符串，丢弃最后一个换行符</p>
+</blockquote>
+<h3 id="2-3-fgets-str-max-stdin"><a href="#2-3-fgets-str-max-stdin" class="headerlink" title="2.3  fgets(str, max, stdin)"></a>2.3  fgets(str, max, stdin)</h3><blockquote>
+<p>作用：接收一行字符串</p>
+<p>前提：char str[max]</p>
+</blockquote>
+<h3 id="2-4-cin-ignore-a-b"><a href="#2-4-cin-ignore-a-b" class="headerlink" title="2.4  cin.ignore(a, b)"></a>2.4  cin.ignore(a, b)</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">	cin.<span class="built_in">ignore</span>() 函数是C++标准输入流（cin）中的一个方法。cin.<span class="built_in">ignore</span>()函数中有两个参数，分别为数值型的a 和 字符型的 ch ，即cin.<span class="built_in">ignore</span>( a, ch )。它表示从输入流 cin 中提取字符，提取的字符被忽略，不被使用。而每抛弃一个字符，它都要进行计数和比较字符：如果计数值达到 a 或者被抛弃的字符是 ch ，则cin.<span class="built_in">ignore</span>() 函数执行终止；否则，它继续等待。</span><br><span class="line">    它的一个常用功能就是用来清除以回车结束的输入缓冲区的内容，消除上一次输入对下一次输入的影响。例如可以这么用，cin.<span class="built_in">ignore</span>(<span class="number">1024</span>, <span class="string">&#x27;\n&#x27;</span>)，通常把第一个参数设置得足够大，这样实际上是为了只有第二个参数 <span class="string">&#x27;\n&#x27;</span> 起作用，所以这一句就是把回车（包括回车）之前的所以字符从输入缓冲流中清除出去。</span><br><span class="line"></span><br><span class="line">如果默认不给参数的话，默认参数为cin.<span class="built_in">ignore</span>(<span class="number">1</span>, EOF)，即把EOF前的<span class="number">1</span>个字符清掉,没有遇到EOF就清掉一个字符然后\结束。</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-memset-a-0x3f-sizeof-a-0"><a href="#3-memset-a-0x3f-sizeof-a-0" class="headerlink" title="3.  memset(a, 0x3f, sizeof(a[0]))"></a>3.  memset(a, 0x3f, sizeof(a[0]))</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">memset</span>(arrayName, <span class="type">int</span> c, <span class="built_in">sizeoif</span>(arrayName[<span class="number">0</span>]));</span><br><span class="line">数组中每个元素不能初始化为<span class="number">1</span></span><br><span class="line">因为：一个字节一个字节的设置，把一个<span class="type">int</span>的每个字节都设置为<span class="number">1</span>，也就是<span class="number">0x01010101</span>,十进制就是<span class="number">16843009</span></span><br><span class="line">二进制就是：<span class="number">00000001</span> <span class="number">00000001</span> <span class="number">00000001</span> <span class="number">00000001</span></span><br><span class="line"><span class="number">2</span> ^ <span class="number">24</span> + <span class="number">2</span> ^ <span class="number">16</span> + <span class="number">2</span> ^ <span class="number">8</span> + <span class="number">2</span> ^ <span class="number">0</span> = <span class="number">16843009</span></span><br><span class="line"></span><br><span class="line">可以初始化为 ：<span class="number">0</span> 、<span class="number">-1</span>、<span class="number">0x3f</span>(无穷大) </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>STL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>set_STL</title>
+    <url>/lidrizzle.github.oi/2024/05/26/STL/set_STL/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><h1 id="《set集合》篇"><a href="#《set集合》篇" class="headerlink" title="《set集合》篇"></a>《set集合》篇</h1><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><blockquote>
+<p> C++标准模板库（STL）中的<code>set</code>是一个容器类，它实现了有序、唯一元素的集合。</p>
+</blockquote>
+<h3 id="2-特点"><a href="#2-特点" class="headerlink" title="2.特点"></a>2.特点</h3><ul>
+<li>唯一性：<code>set</code>中的元素是<strong>唯一</strong>的，即每个元素<strong>只能出现一次。</strong></li>
+<li>自动排序：<code>set</code>中的元素按升序排序，默认使用 <code>&lt;</code> 运算符进行比较。您也可以自定义比较函数来指定排序规则。<ul>
+<li>动态大小： <code>set</code>可以根据需要动态调整大小，可以插入或删除元素。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-头文件"><a href="#3-头文件" class="headerlink" title="3.头文件"></a>3.头文件</h3><blockquote>
+<p><code>set</code>位于 <code>&lt;set&gt;</code> 头文件中，您需要包含这个头文件才能使用<code>set</code>。</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-常用操作"><a href="#4-常用操作" class="headerlink" title="4.常用操作"></a>4.常用操作</h3><ul>
+<li>插入元素：使用 <code>insert()</code> 成员函数将元素插入<code>set</code>中。<code>emplace()</code>比<code>insert()</code>更加高效</li>
+<li>删除元素：使用 <code>erase()</code> 成员函数删除指定元素或范围内的元素。</li>
+<li>查找元素：使用 <code>find()</code> 成员函数查找指定元素，如果找到则返回元素的迭代器，否则返回<code>set</code>结尾的迭代器。</li>
+<li>访问元素：<code>set</code>中的元素是只读的，您可以使用迭代器来访问元素。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    std::set&lt;<span class="type">int</span>&gt; mySet;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 插入元素</span></span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">5</span>);</span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">2</span>);</span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">8</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历元素</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> it = mySet.<span class="built_in">begin</span>(); it != mySet.<span class="built_in">end</span>(); ++it) &#123;</span><br><span class="line">        std::cout &lt;&lt; *it &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    std::cout &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 查找元素</span></span><br><span class="line">    <span class="keyword">auto</span> it = mySet.<span class="built_in">find</span>(<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">if</span> (it != mySet.<span class="built_in">end</span>()) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Element found: &quot;</span> &lt;&lt; *it &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 删除元素</span></span><br><span class="line">    mySet.<span class="built_in">erase</span>(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//输出结果:</span></span><br><span class="line"><span class="number">2</span> <span class="number">5</span> <span class="number">8</span></span><br><span class="line">Element found: <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-拓展"><a href="#5-拓展" class="headerlink" title="5.拓展"></a>5.拓展</h3><ol>
+<li><h6 id="元素比较和排序："><a href="#元素比较和排序：" class="headerlink" title="元素比较和排序："></a>元素比较和排序：</h6><ul>
+<li>默认情况下，<code>set</code>使用 <code>&lt;</code> 运算符进行比较元素。这意味着元素类型必须支持 <code>&lt;</code> 运算符，或者您可以提供自定义的比较函数。</li>
+<li>如果您想使用自定义的比较函数，可以在创建<code>set</code>对象时提供该函数或通过模板参数指定。</li>
+<li>自定义比较函数应采用两个参数，并返回一个布尔值，表示第一个参数是否小于第二个参数。</li>
+</ul>
+</li>
+<li><h6 id="set的底层实现："><a href="#set的底层实现：" class="headerlink" title="set的底层实现："></a><code>set</code>的底层实现：</h6><ul>
+<li><code>set</code>通常使用红黑树（Red-Black Tree）作为其底层实现。红黑树是一种自平衡二叉搜索树，它保持树的高度较小，从而提供高效的插入、删除和查找操作。</li>
+<li>由于红黑树的特性，<code>set</code>中的元素总是按照升序排列。</li>
+</ul>
+</li>
+<li><h6 id="时间复杂度："><a href="#时间复杂度：" class="headerlink" title="时间复杂度："></a>时间复杂度：</h6><ul>
+<li>插入、删除和查找操作的平均时间复杂度是 O(log n)，其中 n 是<code>set</code>中的元素数量。</li>
+</ul>
+</li>
+<li><h6 id="multiset："><a href="#multiset：" class="headerlink" title="multiset："></a><code>multiset</code>：</h6><ul>
+<li><code>multiset</code>是<code>set</code>的变体，允许存储重复的元素。与<code>set</code>不同，<code>multiset</code>中的元素不会被唯一化。</li>
+<li><code>multiset</code>提供了与<code>set</code>相同的接口和操作，并且具有类似的性能特征。</li>
+</ul>
+</li>
+<li><h6 id="使用自定义类型："><a href="#使用自定义类型：" class="headerlink" title="使用自定义类型："></a>使用自定义类型：</h6><ul>
+<li>您可以在<code>set</code>中存储自定义类型的元素。为了使<code>set</code>正常工作，您需要定义元素类型的 <code>&lt;</code> 运算符或自定义比较函数。</li>
+<li>默认情况下，<code>set</code>使用元素类型的 <code>&lt;</code> 运算符进行比较。如果元素类型不支持 <code>&lt;</code> 运算符，您需要提供自定义的比较函数。</li>
+</ul>
+</li>
+<li><h6 id="其他成员函数和操作："><a href="#其他成员函数和操作：" class="headerlink" title="其他成员函数和操作："></a>其他成员函数和操作：</h6><ul>
+<li><code>set</code>还提供了其他一些有用的成员函数和操作，如<code>size()</code>（返回<code>set</code>中元素的数量）、<code>empty()</code>（检查<code>set</code>是否为空）等。</li>
+<li>您可以使用范围构造函数、范围插入函数、交集、并集、差集等操作来处理<code>set</code>对象。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>STL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sort_STL</title>
+    <url>/lidrizzle.github.oi/2024/05/26/STL/sort_STL/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><h1 id="《排序》篇"><a href="#《排序》篇" class="headerlink" title="《排序》篇"></a>《排序》篇</h1><h3 id="1-sort"><a href="#1-sort" class="headerlink" title="1.sort()"></a>1.sort()</h3><blockquote>
+<p>时间复杂度：nlog(n)</p>
+<p>它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的太深，他会选择推排序。<br>————————————————</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sort</span>(first_pointer, first_pointer + n, cmp); <span class="comment">// n:数组长度</span></span><br><span class="line">参数解释： 第一个参数是数组的首地址，一般写上数组名就可以，因为数组名是一个指针常量。第二个参数相对较好理解，即首地址加上数组的长度n（代表尾地址的下一地址）。最后一个参数是比较函数的名称（自定义函数cmp），这个比较函数可以不写，即第三个参数可以缺省，这样sort会默认按数组升序排序。</span><br></pre></td></tr></table></figure>
+
+<p>举例：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">形式:</span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line"><span class="built_in">sort</span>(a,<span class="built_in">begin</span>(), a.<span class="built_in">end</span>()); <span class="comment">// 默认升序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>(), cmp); <span class="comment">//  根据cmp决定</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a[<span class="number">100</span>];</span><br><span class="line"><span class="built_in">sort</span>(a, a + n);</span><br><span class="line">对数组A的<span class="number">0</span>~n<span class="number">-1</span>元素进行升序排序，只要写<span class="built_in">sort</span>(a, a + n);即可；对于向量V也一样，<span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>())即可。</span><br></pre></td></tr></table></figure>
+
+<p>定义比较函数cmp()：(最常用)</p>
+<ol>
+<li>使用标准库函数</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;()); <span class="comment">// 降序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">less</span>&lt;<span class="type">int</span>&gt;());    <span class="comment">// 升序排列（默认）</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>重载结构体或类的比较运算符</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 情况一：在结构体内部重载</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">student</span> &#123;</span><br><span class="line">    <span class="type">int</span> id;</span><br><span class="line">    string name;</span><br><span class="line">    <span class="type">double</span> grade;</span><br><span class="line">    </span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s) &#123;</span><br><span class="line">        <span class="keyword">return</span> id &gt; s.id; <span class="comment">// 降序排列</span></span><br><span class="line">        <span class="keyword">return</span> id &lt; s.id; <span class="comment">// 升序排列</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>()); <span class="comment">//  ！！！要加上sort()才可以排序使用bool operator &lt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 情况二：在外部重载</span></span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s1, <span class="type">const</span> student&amp; s2) &#123;</span><br><span class="line">    <span class="keyword">return</span> s1.id &gt; s2.id; <span class="comment">//降序排列</span></span><br><span class="line">    <span class="keyword">return</span> s1.id &lt; s2.id; <span class="comment">//升序排列</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-lambda表达式"><a href="#2-lambda表达式" class="headerlink" title="2.  lambda表达式"></a>2.  lambda表达式</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [&amp;](PII &amp;a, PII &amp;b) &#123;<span class="keyword">return</span> a.y &lt; b.y;&#125;);</span><br></pre></td></tr></table></figure>
+
+<img src="/lidrizzle.github.oi/D:/ChenYintaoBlogs\source\images\ImagesTypora\lambda.png">
+]]></content>
+      <tags>
+        <tag>STL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vector_STL</title>
+    <url>/lidrizzle.github.oi/2024/05/24/STL/vector_STL/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><h1 id="《vector》篇"><a href="#《vector》篇" class="headerlink" title="《vector》篇"></a>《vector》篇</h1><p>vector中的容量变化为：增长策略对不同编译器或库是不同的。</p>
 <h3 id="1-元素去重的三个方法"><a href="#1-元素去重的三个方法" class="headerlink" title="1.  元素去重的三个方法"></a>1.  元素去重的三个方法</h3><p>(1)结合sort和unique函数</p>
 <blockquote>
 <p>unique()函数将相邻且重复的元素放到<a href="https://so.csdn.net/so/search?q=vector&spm=1001.2101.3001.7020">vector</a>的尾部 然后返回指向第一个重复元素的迭代器再用erase函数擦除从这个元素到最后元素的所有的元素。</p>
@@ -58,23 +221,8 @@
 </ul>
 </blockquote>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/lidrizzle.github.oi/2024/05/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+      <tags>
+        <tag>STL</tag>
+      </tags>
   </entry>
 </search>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="STL," />
 
 
 
@@ -81,15 +81,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tages">
-<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/tags/index.html">
+<meta name="description" content="《set集合》篇1.概念  C++标准模板库（STL）中的set是一个容器类，它实现了有序、唯一元素的集合。  2.特点 唯一性：set中的元素是唯一的，即每个元素只能出现一次。 自动排序：set中的元素按升序排序，默认使用 &lt; 运算符进行比较。您也可以自定义比较函数来指定排序规则。 动态大小： set可以根据需要动态调整大小，可以插入或删除元素。    3.头文件 set位于 &lt;se">
+<meta property="og:type" content="article">
+<meta property="og:title" content="set_STL">
+<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/set_STL/index.html">
 <meta property="og:site_name" content="Lidrizzle&#39;s Blog">
+<meta property="og:description" content="《set集合》篇1.概念  C++标准模板库（STL）中的set是一个容器类，它实现了有序、唯一元素的集合。  2.特点 唯一性：set中的元素是唯一的，即每个元素只能出现一次。 自动排序：set中的元素按升序排序，默认使用 &lt; 运算符进行比较。您也可以自定义比较函数来指定排序规则。 动态大小： set可以根据需要动态调整大小，可以插入或删除元素。    3.头文件 set位于 &lt;se">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-05-24T14:36:14.000Z">
-<meta property="article:modified_time" content="2024-05-24T14:38:50.780Z">
+<meta property="article:published_time" content="2024-05-26T03:22:37.000Z">
+<meta property="article:modified_time" content="2024-05-26T06:45:53.144Z">
 <meta property="article:author" content="Lidrizzle">
-<meta property="article:tag" content="lidrizzle">
+<meta property="article:tag" content="STL">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/tags/"/>
+  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/set_STL/"/>
 
 
 
 
 
-  <title>Tages | Lidrizzle's Blog</title>
+  <title>set_STL | Lidrizzle's Blog</title>
   
 
 
@@ -285,40 +287,246 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/26/STL/set_STL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/lidrizzle.github.oi/images/Lidrizzle.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lidrizzle's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">Tages</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 1 个标签
+          <h1 class="post-title" itemprop="name headline">set_STL</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-26T11:22:37+08:00">
+                2024-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2024/05/26/STL/set_STL/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  887
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/lidrizzle.github.oi/tags/STL/" style="font-size: 12px; color: #ccc">STL</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="《set集合》篇"><a href="#《set集合》篇" class="headerlink" title="《set集合》篇"></a>《set集合》篇</h1><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><blockquote>
+<p> C++标准模板库（STL）中的<code>set</code>是一个容器类，它实现了有序、唯一元素的集合。</p>
+</blockquote>
+<h3 id="2-特点"><a href="#2-特点" class="headerlink" title="2.特点"></a>2.特点</h3><ul>
+<li>唯一性：<code>set</code>中的元素是<strong>唯一</strong>的，即每个元素<strong>只能出现一次。</strong></li>
+<li>自动排序：<code>set</code>中的元素按升序排序，默认使用 <code>&lt;</code> 运算符进行比较。您也可以自定义比较函数来指定排序规则。<ul>
+<li>动态大小： <code>set</code>可以根据需要动态调整大小，可以插入或删除元素。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-头文件"><a href="#3-头文件" class="headerlink" title="3.头文件"></a>3.头文件</h3><blockquote>
+<p><code>set</code>位于 <code>&lt;set&gt;</code> 头文件中，您需要包含这个头文件才能使用<code>set</code>。</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-常用操作"><a href="#4-常用操作" class="headerlink" title="4.常用操作"></a>4.常用操作</h3><ul>
+<li>插入元素：使用 <code>insert()</code> 成员函数将元素插入<code>set</code>中。<code>emplace()</code>比<code>insert()</code>更加高效</li>
+<li>删除元素：使用 <code>erase()</code> 成员函数删除指定元素或范围内的元素。</li>
+<li>查找元素：使用 <code>find()</code> 成员函数查找指定元素，如果找到则返回元素的迭代器，否则返回<code>set</code>结尾的迭代器。</li>
+<li>访问元素：<code>set</code>中的元素是只读的，您可以使用迭代器来访问元素。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    std::set&lt;<span class="type">int</span>&gt; mySet;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 插入元素</span></span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">5</span>);</span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">2</span>);</span><br><span class="line">    mySet.<span class="built_in">insert</span>(<span class="number">8</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历元素</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> it = mySet.<span class="built_in">begin</span>(); it != mySet.<span class="built_in">end</span>(); ++it) &#123;</span><br><span class="line">        std::cout &lt;&lt; *it &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    std::cout &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 查找元素</span></span><br><span class="line">    <span class="keyword">auto</span> it = mySet.<span class="built_in">find</span>(<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">if</span> (it != mySet.<span class="built_in">end</span>()) &#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Element found: &quot;</span> &lt;&lt; *it &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 删除元素</span></span><br><span class="line">    mySet.<span class="built_in">erase</span>(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输出结果:</span></span><br><span class="line"><span class="number">2</span> <span class="number">5</span> <span class="number">8</span></span><br><span class="line">Element found: <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-拓展"><a href="#5-拓展" class="headerlink" title="5.拓展"></a>5.拓展</h3><ol>
+<li><h6 id="元素比较和排序："><a href="#元素比较和排序：" class="headerlink" title="元素比较和排序："></a>元素比较和排序：</h6><ul>
+<li>默认情况下，<code>set</code>使用 <code>&lt;</code> 运算符进行比较元素。这意味着元素类型必须支持 <code>&lt;</code> 运算符，或者您可以提供自定义的比较函数。</li>
+<li>如果您想使用自定义的比较函数，可以在创建<code>set</code>对象时提供该函数或通过模板参数指定。</li>
+<li>自定义比较函数应采用两个参数，并返回一个布尔值，表示第一个参数是否小于第二个参数。</li>
+</ul>
+</li>
+<li><h6 id="set的底层实现："><a href="#set的底层实现：" class="headerlink" title="set的底层实现："></a><code>set</code>的底层实现：</h6><ul>
+<li><code>set</code>通常使用红黑树（Red-Black Tree）作为其底层实现。红黑树是一种自平衡二叉搜索树，它保持树的高度较小，从而提供高效的插入、删除和查找操作。</li>
+<li>由于红黑树的特性，<code>set</code>中的元素总是按照升序排列。</li>
+</ul>
+</li>
+<li><h6 id="时间复杂度："><a href="#时间复杂度：" class="headerlink" title="时间复杂度："></a>时间复杂度：</h6><ul>
+<li>插入、删除和查找操作的平均时间复杂度是 O(log n)，其中 n 是<code>set</code>中的元素数量。</li>
+</ul>
+</li>
+<li><h6 id="multiset："><a href="#multiset：" class="headerlink" title="multiset："></a><code>multiset</code>：</h6><ul>
+<li><code>multiset</code>是<code>set</code>的变体，允许存储重复的元素。与<code>set</code>不同，<code>multiset</code>中的元素不会被唯一化。</li>
+<li><code>multiset</code>提供了与<code>set</code>相同的接口和操作，并且具有类似的性能特征。</li>
+</ul>
+</li>
+<li><h6 id="使用自定义类型："><a href="#使用自定义类型：" class="headerlink" title="使用自定义类型："></a>使用自定义类型：</h6><ul>
+<li>您可以在<code>set</code>中存储自定义类型的元素。为了使<code>set</code>正常工作，您需要定义元素类型的 <code>&lt;</code> 运算符或自定义比较函数。</li>
+<li>默认情况下，<code>set</code>使用元素类型的 <code>&lt;</code> 运算符进行比较。如果元素类型不支持 <code>&lt;</code> 运算符，您需要提供自定义的比较函数。</li>
+</ul>
+</li>
+<li><h6 id="其他成员函数和操作："><a href="#其他成员函数和操作：" class="headerlink" title="其他成员函数和操作："></a>其他成员函数和操作：</h6><ul>
+<li><code>set</code>还提供了其他一些有用的成员函数和操作，如<code>size()</code>（返回<code>set</code>中元素的数量）、<code>empty()</code>（检查<code>set</code>是否为空）等。</li>
+<li>您可以使用范围构造函数、范围插入函数、交集、并集、差集等操作来处理<code>set</code>对象。</li>
+</ul>
+</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/lidrizzle.github.oi/tags/STL/" rel="tag"><i class="fa fa-tag"></i> STL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/" rel="next" title="cstring_STL">
+                <i class="fa fa-chevron-left"></i> cstring_STL
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/" rel="prev" title="sort_STL">
+                sort_STL <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -361,8 +569,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -425,6 +642,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8Aset%E9%9B%86%E5%90%88%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《set集合》篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%A6%82%E5%BF%B5"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%89%B9%E7%82%B9"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.头文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.常用操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%8B%93%E5%B1%95"><span class="nav-number">1.0.5.</span> <span class="nav-text">5.拓展</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E6%AF%94%E8%BE%83%E5%92%8C%E6%8E%92%E5%BA%8F%EF%BC%9A"><span class="nav-number">1.0.5.0.0.1.</span> <span class="nav-text">元素比较和排序：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#set%E7%9A%84%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%EF%BC%9A"><span class="nav-number">1.0.5.0.0.2.</span> <span class="nav-text">set的底层实现：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%9A"><span class="nav-number">1.0.5.0.0.3.</span> <span class="nav-text">时间复杂度：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#multiset%EF%BC%9A"><span class="nav-number">1.0.5.0.0.4.</span> <span class="nav-text">multiset：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="nav-number">1.0.5.0.0.5.</span> <span class="nav-text">使用自定义类型：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E5%92%8C%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="nav-number">1.0.5.0.0.6.</span> <span class="nav-text">其他成员函数和操作：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -585,9 +818,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/tags/index.html';
-          this.page.identifier = 'tags/index.html';
-          this.page.title = 'Tages';
+          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/set_STL/';
+          this.page.identifier = '2024/05/26/STL/set_STL/';
+          this.page.title = 'set_STL';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Lidrizzle.disqus.com/embed.js';

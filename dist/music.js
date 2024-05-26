@@ -17,8 +17,8 @@ const ap = new APlayer({
     audio: [{
         name: '我是如此相信',
         artist: '顾琳熙',
-        url: 'https://github.com/lidrizzle/lidrizzle.github.oi/main/music/believe/one.ogg',
-        cover: 'https://github.com/lidrizzle/lidrizzle.github.oi/main/music/believe/one.png',
-        lrc: 'https://github.com/lidrizzle/lidrizzle.github.oi/main/music/believe/one.lrc', //音频歌词，配合上面的lrcType使用
+        url: 'https://github.com/lidrizzle/lidrizzle.github.oi/tree/main/music/believe/one.ogg',
+        cover: 'https://github.com/lidrizzle/lidrizzle.github.oi/tree/main/music/believe/one.png',
+        lrc: 'https://github.com/lidrizzle/lidrizzle.github.oi/tree/main/music/believe/one.lrc', //音频歌词，配合上面的lrcType使用
     }]
 });

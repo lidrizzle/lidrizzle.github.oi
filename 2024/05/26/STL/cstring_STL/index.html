@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="STL," />
 
 
 
@@ -81,15 +81,17 @@
 
 
 
-<meta name="description" content="念念不忘，必有回响">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lidrizzle&#39;s Blog">
-<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/index.html">
+<meta name="description" content="《cstring》篇1.操作函数1.  substr(pos, len) 返回值：string，从pos开始的len个字符的拷贝 pos：默认0 len：默认s.size() - 1, 也就是到最后了  如果最后取不到len长度的字符串，则只取剩余的所有字串 1234567891011121314151617181920#include&lt;iostream&gt; #include&lt;st">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cstring_STL">
+<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/index.html">
 <meta property="og:site_name" content="Lidrizzle&#39;s Blog">
-<meta property="og:description" content="念念不忘，必有回响">
+<meta property="og:description" content="《cstring》篇1.操作函数1.  substr(pos, len) 返回值：string，从pos开始的len个字符的拷贝 pos：默认0 len：默认s.size() - 1, 也就是到最后了  如果最后取不到len长度的字符串，则只取剩余的所有字串 1234567891011121314151617181920#include&lt;iostream&gt; #include&lt;st">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-05-26T03:21:26.000Z">
+<meta property="article:modified_time" content="2024-05-26T06:45:41.937Z">
 <meta property="article:author" content="Lidrizzle">
-<meta property="article:tag" content="lidrizzle">
+<meta property="article:tag" content="STL">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/"/>
+  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/"/>
 
 
 
 
 
-  <title>Lidrizzle's Blog</title>
+  <title>cstring_STL | Lidrizzle's Blog</title>
   
 
 
@@ -145,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,353 +284,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/26/STL/sort_STL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/lidrizzle.github.oi/images/Lidrizzle.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lidrizzle's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/" itemprop="url">sort_STL</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-26T11:26:03+08:00">
-                2024-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/26/STL/sort_STL/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  603
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          《排序》篇1.sort()
-时间复杂度：nlog(n)
-它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/26/STL/set_STL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/lidrizzle.github.oi/images/Lidrizzle.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lidrizzle's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/" itemprop="url">set_STL</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-26T11:22:37+08:00">
-                2024-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/26/STL/set_STL/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  887
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          《set集合》篇1.概念
- C++标准模板库（STL）中的set是一个容器类，它实现了有序、唯一元素的集合。
-
-2.特点
-唯一性：set中的元素是唯一的，即每个元素只能出现一次。
-自动排序：set中的元素按升序排序，默认使用 &lt; 运算符进行比较。您也可以自定义比较函数来指定排序规则。
-动态大小
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -659,9 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/" itemprop="url">cstring_STL</a></h1>
+          <h1 class="post-title" itemprop="name headline">cstring_STL</h1>
         
 
         <div class="post-meta">
@@ -753,24 +408,52 @@
       
 
       
-        
-          
-          《cstring》篇1.操作函数1.  substr(pos, len)
-返回值：string，从pos开始的len个字符的拷贝
-pos：默认0
-len：默认s.size() - 1, 也就是到最后了
+        <h1 id="《cstring》篇"><a href="#《cstring》篇" class="headerlink" title="《cstring》篇"></a>《cstring》篇</h1><h2 id="1-操作函数"><a href="#1-操作函数" class="headerlink" title="1.操作函数"></a>1.操作函数</h2><h3 id="1-substr-pos-len"><a href="#1-substr-pos-len" class="headerlink" title="1.  substr(pos, len)"></a>1.  substr(pos, len)</h3><blockquote>
+<p>返回值：string，从pos开始的len个字符的拷贝</p>
+<p>pos：默认0</p>
+<p>len：默认s.size() - 1, 也就是到最后了</p>
+</blockquote>
+<p>如果最后取不到len长度的字符串，则只取剩余的所有字串</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    string a = <span class="string">&quot;ac&quot;</span>;</span><br><span class="line">    a += <span class="string">&quot;w&quot;</span>;<span class="comment">//支持比较操作符&gt;,&gt;=,&lt;,&lt;=,==,!=</span></span><br><span class="line">    cout &lt;&lt; a &lt;&lt; endl; <span class="comment">//输出子串a :acw</span></span><br><span class="line"></span><br><span class="line">    a += <span class="string">&quot;ing&quot;</span>;  </span><br><span class="line">    cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//以字符串数组理解</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">3</span>) &lt;&lt; endl; <span class="comment">//当第一个数是0 则后一位数:输出从头开始的长度为3的子串</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">3</span>) &lt;&lt; endl; <span class="comment">//当第一个数是1 则输出下标为1 到下标为3的子串  </span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">9</span>) &lt;&lt; endl;<span class="comment">//如果超出长度范围 则输出原子串</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">1</span>) &lt;&lt; endl; <span class="comment">//从下标为1开始输出</span></span><br><span class="line">    cout &lt;&lt; a.<span class="built_in">substr</span>(<span class="number">0</span>) &lt;&lt; endl; <span class="comment">//原子串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, a.<span class="built_in">c_str</span>());<span class="comment">//如果用printf输出  </span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
 
-如果最后取不到len长度的字符串，则只取剩余的所有字串
-12345678910111213141
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<h3 id="2-transform-first-last-result-op"><a href="#2-transform-first-last-result-op" class="headerlink" title="2.  transform(first, last, result, op);"></a>2.  transform(first, last, result, op);</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">作用：将某操作应用于指定范围的每个元素。</span><br><span class="line"></span><br><span class="line">first：容器首迭代器ffffflast：容器末迭代器sssssssssssfffffffffFDff</span><br><span class="line"></span><br><span class="line">op：操作的一元 n</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">first1：第一个容器首迭代器</span><br><span class="line"></span><br><span class="line">last1：末迭代器</span><br><span class="line"></span><br><span class="line">first2： 第二个容器的首迭代器</span><br><span class="line"></span><br><span class="line">result：存放结果的容器</span><br><span class="line"></span><br><span class="line">binary_op：要进行操作的二元函数对象</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将字符串小写字母改大写，将结果保存在second数组中</span></span><br><span class="line"><span class="built_in">transform</span>(first1.<span class="built_in">begin</span>(), first1.<span class="built_in">end</span>(), first2.<span class="built_in">begin</span>(), ::tolower);</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-find-a-b-c-d"><a href="#3-find-a-b-c-d" class="headerlink" title="3. find(a, b,  c, d)"></a>3. find(a, b,  c, d)</h3><blockquote>
+<p> s.rfind(str)： 是从字符串右侧开始匹配str，并返回在字符串中的下标位置；</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">(string s)</span> </span>&#123; <span class="comment">//在母串s中找字串subs的个数</span></span><br><span class="line">	<span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">	string subs = <span class="string">&quot;chuanzhi&quot;</span>;</span><br><span class="line">	<span class="type">int</span> ind = <span class="number">0</span>;</span><br><span class="line">	<span class="type">int</span> len = subs.<span class="built_in">size</span>();</span><br><span class="line">	<span class="keyword">while</span> (s.<span class="built_in">find</span>(subs, ind) != <span class="number">-1</span>) &#123; <span class="comment">// string::npos</span></span><br><span class="line">		cnt ++;</span><br><span class="line">		ind = s.<span class="built_in">find</span>(subs, ind) + len;<span class="comment">// 核心</span></span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; cnt &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//string中find()返回值是字母在母串中的下标位置。</span></span><br><span class="line"><span class="comment">//s.find（str，pos）</span></span><br><span class="line"><span class="comment">//find(str,pos)是用来寻找从pos开始(包括pos处字符)匹配str的位置</span></span><br><span class="line"><span class="comment">//如果没有找到，那么会返回一个特别的标记npos，一般写作string::npos。</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>find_first_of()函数</strong></p>
+<p><strong>正向查找在原字符串中第一个与指定字符串（或字符）中的某个字符匹配的字符</strong></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">find_first_of</span>(<span class="type">char</span>);一般是用来找单个字符，参数也可以是字符串类型；</span><br><span class="line"></span><br><span class="line">如：subs = <span class="string">&quot;chuanzhi&quot;</span>; s = <span class="string">&quot;welcometochangzhi&quot;</span>;</span><br><span class="line">则:s.<span class="built_in">find_first_of</span>(subs)，如果是字符串，则找的是，s中最先出现subs中字符的位置</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-insert"><a href="#4-insert" class="headerlink" title="4. insert()"></a>4. insert()</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 尾插一个字符</span></span><br><span class="line">    a.<span class="built_in">push_back</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"><span class="comment">// insert(pos,char):在制定的位置pos前插入字符char</span></span><br><span class="line">    a.<span class="built_in">insert</span>(a.<span class="built_in">begin</span>(),<span class="string">&#x27;1&#x27;</span>); <span class="comment">//输出 1a</span></span><br><span class="line">  <span class="comment">//插入字符串</span></span><br><span class="line">  string str2=<span class="string">&quot;hello&quot;</span>;</span><br><span class="line">    string s2=<span class="string">&quot;weakhaha&quot;</span>;</span><br><span class="line">    str2.<span class="built_in">insert</span>(<span class="number">0</span>,s2,<span class="number">1</span>,<span class="number">3</span>);</span><br><span class="line"><span class="comment">//将字符串s2从下标为1的e开始数3个字符，分别是eak，插入原串的下标为0的字符h前    </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="5-c-str"><a href="#5-c-str" class="headerlink" title="5.c_str()"></a>5.c_str()</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 返回这个string对应的字符数组的头指针</span></span><br><span class="line">string s = <span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s&quot;</span>, s.<span class="built_in">c_str</span>()); <span class="comment">//输出 &quot;Hello World!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-接收字符串方法"><a href="#2-接收字符串方法" class="headerlink" title="2.接收字符串方法"></a>2.接收字符串方法</h2><h3 id="2-1-cin-str-字符串"><a href="#2-1-cin-str-字符串" class="headerlink" title="2.1  cin(str)字符串"></a>2.1  cin(str)字符串</h3><blockquote>
+<p>作用：可接受单词字符，串遇空格停止</p>
+</blockquote>
+<h3 id="2-2-getline-cin-str"><a href="#2-2-getline-cin-str" class="headerlink" title="2.2  getline(cin, str)"></a>2.2  getline(cin, str)</h3><blockquote>
+<p>作用：接受一行字符串，丢弃最后一个换行符</p>
+</blockquote>
+<h3 id="2-3-fgets-str-max-stdin"><a href="#2-3-fgets-str-max-stdin" class="headerlink" title="2.3  fgets(str, max, stdin)"></a>2.3  fgets(str, max, stdin)</h3><blockquote>
+<p>作用：接收一行字符串</p>
+<p>前提：char str[max]</p>
+</blockquote>
+<h3 id="2-4-cin-ignore-a-b"><a href="#2-4-cin-ignore-a-b" class="headerlink" title="2.4  cin.ignore(a, b)"></a>2.4  cin.ignore(a, b)</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	cin.<span class="built_in">ignore</span>() 函数是C++标准输入流（cin）中的一个方法。cin.<span class="built_in">ignore</span>()函数中有两个参数，分别为数值型的a 和 字符型的 ch ，即cin.<span class="built_in">ignore</span>( a, ch )。它表示从输入流 cin 中提取字符，提取的字符被忽略，不被使用。而每抛弃一个字符，它都要进行计数和比较字符：如果计数值达到 a 或者被抛弃的字符是 ch ，则cin.<span class="built_in">ignore</span>() 函数执行终止；否则，它继续等待。</span><br><span class="line">    它的一个常用功能就是用来清除以回车结束的输入缓冲区的内容，消除上一次输入对下一次输入的影响。例如可以这么用，cin.<span class="built_in">ignore</span>(<span class="number">1024</span>, <span class="string">&#x27;\n&#x27;</span>)，通常把第一个参数设置得足够大，这样实际上是为了只有第二个参数 <span class="string">&#x27;\n&#x27;</span> 起作用，所以这一句就是把回车（包括回车）之前的所以字符从输入缓冲流中清除出去。</span><br><span class="line"></span><br><span class="line">如果默认不给参数的话，默认参数为cin.<span class="built_in">ignore</span>(<span class="number">1</span>, EOF)，即把EOF前的<span class="number">1</span>个字符清掉,没有遇到EOF就清掉一个字符然后\结束。</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-memset-a-0x3f-sizeof-a-0"><a href="#3-memset-a-0x3f-sizeof-a-0" class="headerlink" title="3.  memset(a, 0x3f, sizeof(a[0]))"></a>3.  memset(a, 0x3f, sizeof(a[0]))</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">memset</span>(arrayName, <span class="type">int</span> c, <span class="built_in">sizeoif</span>(arrayName[<span class="number">0</span>]));</span><br><span class="line">数组中每个元素不能初始化为<span class="number">1</span></span><br><span class="line">因为：一个字节一个字节的设置，把一个<span class="type">int</span>的每个字节都设置为<span class="number">1</span>，也就是<span class="number">0x01010101</span>,十进制就是<span class="number">16843009</span></span><br><span class="line">二进制就是：<span class="number">00000001</span> <span class="number">00000001</span> <span class="number">00000001</span> <span class="number">00000001</span></span><br><span class="line"><span class="number">2</span> ^ <span class="number">24</span> + <span class="number">2</span> ^ <span class="number">16</span> + <span class="number">2</span> ^ <span class="number">8</span> + <span class="number">2</span> ^ <span class="number">0</span> = <span class="number">16843009</span></span><br><span class="line"></span><br><span class="line">可以初始化为 ：<span class="number">0</span> 、<span class="number">-1</span>、<span class="number">0x3f</span>(无穷大) </span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
@@ -785,353 +468,40 @@ len：默认s.size() - 1, 也就是到最后了
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/24/STL/vector_STL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/lidrizzle.github.oi/images/Lidrizzle.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lidrizzle's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/lidrizzle.github.oi/2024/05/24/STL/vector_STL/" itemprop="url">vector_STL</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-24T14:06:59+08:00">
-                2024-05-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/lidrizzle.github.oi/tags/STL/" rel="tag"><i class="fa fa-tag"></i> STL</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/lidrizzle.github.oi/2024/05/24/STL/vector_STL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/24/STL/vector_STL/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.5k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          《vector》篇vector中的容量变化为：增长策略对不同编译器或库是不同的。
-1.  元素去重的三个方法(1)结合sort和unique函数
-
-unique()函数将相邻且重复的元素放到vector的尾部 然后返回指向第一个重复元素的迭代器再用erase函数擦除从这个元素到最后元素的所有的元素。
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/lidrizzle.github.oi/2024/05/24/STL/vector_STL/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/lidrizzle.github.oi/2024/05/24/STL/vector_STL/" rel="next" title="vector_STL">
+                <i class="fa fa-chevron-left"></i> vector_STL
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/24/STL/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/lidrizzle.github.oi/images/Lidrizzle.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lidrizzle's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/lidrizzle.github.oi/2024/05/24/STL/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-24T13:02:17+08:00">
-                2024-05-24
-              </time>
+              <a href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/" rel="prev" title="set_STL">
+                set_STL <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/lidrizzle.github.oi/2024/05/24/STL/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/24/STL/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  75
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/lidrizzle.github.oi/2024/05/24/STL/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1141,10 +511,11 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1152,6 +523,20 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1172,8 +557,17 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1236,6 +630,22 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8Acstring%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《cstring》篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.操作函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-substr-pos-len"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.  substr(pos, len)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-transform-first-last-result-op"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.  transform(first, last, result, op);</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-find-a-b-c-d"><span class="nav-number">1.1.3.</span> <span class="nav-text">3. find(a, b,  c, d)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-insert"><span class="nav-number">1.1.4.</span> <span class="nav-text">4. insert()</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#5-c-str"><span class="nav-number">1.1.4.0.1.</span> <span class="nav-text">5.c_str()</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%8E%A5%E6%94%B6%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">2.接收字符串方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-cin-str-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1  cin(str)字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-getline-cin-str"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2  getline(cin, str)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-fgets-str-max-stdin"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3  fgets(str, max, stdin)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-cin-ignore-a-b"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4  cin.ignore(a, b)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-memset-a-0x3f-sizeof-a-0"><span class="nav-number">1.2.5.</span> <span class="nav-text">3.  memset(a, 0x3f, sizeof(a[0]))</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1372,6 +782,10 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
 
 
   
+  <script type="text/javascript" src="/lidrizzle.github.oi/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/lidrizzle.github.oi/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1389,6 +803,18 @@ unique()函数将相邻且重复的元素放到vector的尾部 然后返回指�
       <script id="dsq-count-scr" src="https://Lidrizzle.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/cstring_STL/';
+          this.page.identifier = '2024/05/26/STL/cstring_STL/';
+          this.page.title = 'cstring_STL';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Lidrizzle.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
