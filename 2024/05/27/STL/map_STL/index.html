@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="《排序》篇1.sort() 时间复杂度：nlog(n) 它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的">
+<meta name="description" content="《map》篇特性：map会按照键的顺序从小到大自动排序，键的类型必须可以比较大小。 1234567891011121314151617#include &lt;map&gt;map&lt;int&gt; mp;mp.find(key); &#x2F;&#x2F; 返回键key的迭代器，定位key出现位置，数据存在就返回该数据位置迭代器，反之，返回mp.end();mp.erase(key); &#x2F;&#x2F;根据键删除键值对0(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sort_STL">
-<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/index.html">
+<meta property="og:title" content="map_STL">
+<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/map_STL/index.html">
 <meta property="og:site_name" content="Lidrizzle&#39;s Blog">
-<meta property="og:description" content="《排序》篇1.sort() 时间复杂度：nlog(n) 它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的">
+<meta property="og:description" content="《map》篇特性：map会按照键的顺序从小到大自动排序，键的类型必须可以比较大小。 1234567891011121314151617#include &lt;map&gt;map&lt;int&gt; mp;mp.find(key); &#x2F;&#x2F; 返回键key的迭代器，定位key出现位置，数据存在就返回该数据位置迭代器，反之，返回mp.end();mp.erase(key); &#x2F;&#x2F;根据键删除键值对0(">
 <meta property="og:locale">
-<meta property="og:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/lambda.png">
-<meta property="article:published_time" content="2024-05-26T03:26:03.000Z">
-<meta property="article:modified_time" content="2024-05-26T08:57:09.325Z">
+<meta property="article:published_time" content="2024-05-27T14:56:00.000Z">
+<meta property="article:modified_time" content="2024-05-27T14:59:59.800Z">
 <meta property="article:author" content="Lidrizzle">
 <meta property="article:tag" content="STL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/lambda.png">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/"/>
+  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/map_STL/"/>
 
 
 
 
 
-  <title>sort_STL | Lidrizzle's Blog</title>
+  <title>map_STL | Lidrizzle's Blog</title>
   
 
 
@@ -301,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/26/STL/sort_STL/">
+    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/27/STL/map_STL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -318,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sort_STL</h1>
+          <h1 class="post-title" itemprop="name headline">map_STL</h1>
         
 
         <div class="post-meta">
@@ -330,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-26T11:26:03+08:00">
-                2024-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-27T22:56:00+08:00">
+                2024-05-27
               </time>
             
 
@@ -349,9 +347,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/#comments" itemprop="discussionUrl">
+                <a href="/lidrizzle.github.oi/2024/05/27/STL/map_STL/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/26/STL/sort_STL/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2024/05/27/STL/map_STL/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -373,7 +371,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  603
+                  298
                 </span>
               
 
@@ -389,7 +387,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  1
                 </span>
               
             </div>
@@ -410,29 +408,8 @@
       
 
       
-        <h1 id="《排序》篇"><a href="#《排序》篇" class="headerlink" title="《排序》篇"></a>《排序》篇</h1><h3 id="1-sort"><a href="#1-sort" class="headerlink" title="1.sort()"></a>1.sort()</h3><blockquote>
-<p>时间复杂度：nlog(n)</p>
-<p>它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的太深，他会选择推排序。<br>————————————————</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(first_pointer, first_pointer + n, cmp); <span class="comment">// n:数组长度</span></span><br><span class="line">参数解释： 第一个参数是数组的首地址，一般写上数组名就可以，因为数组名是一个指针常量。第二个参数相对较好理解，即首地址加上数组的长度n（代表尾地址的下一地址）。最后一个参数是比较函数的名称（自定义函数cmp），这个比较函数可以不写，即第三个参数可以缺省，这样sort会默认按数组升序排序。</span><br></pre></td></tr></table></figure>
-
-<p>举例：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">形式:</span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line"><span class="built_in">sort</span>(a,<span class="built_in">begin</span>(), a.<span class="built_in">end</span>()); <span class="comment">// 默认升序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>(), cmp); <span class="comment">//  根据cmp决定</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a[<span class="number">100</span>];</span><br><span class="line"><span class="built_in">sort</span>(a, a + n);</span><br><span class="line">对数组A的<span class="number">0</span>~n<span class="number">-1</span>元素进行升序排序，只要写<span class="built_in">sort</span>(a, a + n);即可；对于向量V也一样，<span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>())即可。</span><br></pre></td></tr></table></figure>
-
-<p>定义比较函数cmp()：(最常用)</p>
-<ol>
-<li>使用标准库函数</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;()); <span class="comment">// 降序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">less</span>&lt;<span class="type">int</span>&gt;());    <span class="comment">// 升序排列（默认）</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>重载结构体或类的比较运算符</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 情况一：在结构体内部重载</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">student</span> &#123;</span><br><span class="line">    <span class="type">int</span> id;</span><br><span class="line">    string name;</span><br><span class="line">    <span class="type">double</span> grade;</span><br><span class="line">    </span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s) &#123;</span><br><span class="line">        <span class="keyword">return</span> id &gt; s.id; <span class="comment">// 降序排列</span></span><br><span class="line">        <span class="keyword">return</span> id &lt; s.id; <span class="comment">// 升序排列</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>()); <span class="comment">//  ！！！要加上sort()才可以排序使用bool operator &lt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 情况二：在外部重载</span></span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s1, <span class="type">const</span> student&amp; s2) &#123;</span><br><span class="line">    <span class="keyword">return</span> s1.id &gt; s2.id; <span class="comment">//降序排列</span></span><br><span class="line">    <span class="keyword">return</span> s1.id &lt; s2.id; <span class="comment">//升序排列</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-lambda表达式"><a href="#2-lambda表达式" class="headerlink" title="2.  lambda表达式"></a>2.  lambda表达式</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [&amp;](PII &amp;a, PII &amp;b) &#123;<span class="keyword">return</span> a.y &lt; b.y;&#125;);</span><br></pre></td></tr></table></figure>
-
-<img src="/lidrizzle.github.oi/D:/ChenYintaoBlogs\source\images\ImagesTypora\lambda.png">
+        <h1 id="《map》篇"><a href="#《map》篇" class="headerlink" title="《map》篇"></a>《map》篇</h1><p>特性：map会按照键的顺序从小到大自动排序，键的类型必须可以比较大小。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span></span></span><br><span class="line">map&lt;<span class="type">int</span>&gt; mp;</span><br><span class="line">mp.<span class="built_in">find</span>(key); <span class="comment">// 返回键key的迭代器，定位key出现位置，数据存在就返回该数据位置迭代器，反之，返回mp.end();</span></span><br><span class="line">mp.<span class="built_in">erase</span>(key); <span class="comment">//根据键删除键值对0(logN)</span></span><br><span class="line">mp.<span class="built_in">erase</span>(it);  <span class="comment">//根据迭代器删除键和值0(1)</span></span><br><span class="line">mp.<span class="built_in">erase</span>(first, last); <span class="comment">// 删除左闭右开迭代器对应的键值</span></span><br><span class="line">mp.<span class="built_in">size</span>(); <span class="comment">// 返回映射对数</span></span><br><span class="line">mp.<span class="built_in">clear</span>(); <span class="comment">//清空map中所有元素</span></span><br><span class="line">mp.<span class="built_in">insert</span>();<span class="comment">//插入元素，插入时要构造键值对</span></span><br><span class="line">mp.<span class="built_in">empty</span>();<span class="comment">//如果map为空，返回true，否则返回false</span></span><br><span class="line">mp.<span class="built_in">begin</span>();<span class="comment">//返回第一个元素的迭代器</span></span><br><span class="line">mp.<span class="built_in">end</span>(); <span class="comment">//返回最后一个元素的下一个迭代器</span></span><br><span class="line">mp.<span class="built_in">rbegin</span>(); <span class="comment">//返回指向map的最有一个迭代器</span></span><br><span class="line">mp.<span class="built_in">rend</span>();<span class="comment">//返回指向map的第一个元素前面一个位置迭代器</span></span><br><span class="line">mp.<span class="built_in">count</span>(key);<span class="comment">//查看元素是否存在，因为map中键是唯一的，存在为true，反之false</span></span><br><span class="line">mp.<span class="built_in">lower_bound</span>();<span class="comment">//返回一个迭代器，指向键值 &gt;= key的第一个元素</span></span><br><span class="line">mp.<span class="built_in">upper_bound</span>();<span class="comment">//指向键值 &gt; key 的第一个元素</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/" rel="next" title="set_STL">
-                <i class="fa fa-chevron-left"></i> set_STL
+              <a href="/lidrizzle.github.oi/2024/05/27/STL/queue_STL/" rel="next" title="queue_STL">
+                <i class="fa fa-chevron-left"></i> queue_STL
               </a>
             
           </div>
@@ -472,10 +449,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/lidrizzle.github.oi/2024/05/27/STL/queue_STL/" rel="prev" title="queue_STL">
-                queue_STL <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -620,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8A%E6%8E%92%E5%BA%8F%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《排序》篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-sort"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.sort()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.  lambda表达式</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8Amap%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《map》篇</span></a></li></ol></div>
             
 
           </div>
@@ -786,9 +759,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/';
-          this.page.identifier = '2024/05/26/STL/sort_STL/';
-          this.page.title = 'sort_STL';
+          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/map_STL/';
+          this.page.identifier = '2024/05/27/STL/map_STL/';
+          this.page.title = 'map_STL';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Lidrizzle.disqus.com/embed.js';

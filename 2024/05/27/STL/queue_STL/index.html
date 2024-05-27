@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="《排序》篇1.sort() 时间复杂度：nlog(n) 它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的">
+<meta name="description" content="《queue》篇头文件queue主要包括循环队列queue 和 优先队列 priority_queue两个容器。  #include    12queue&lt;int&gt; q;struct res&#123;...&#125;; queue&lt;rec&gt; q; &#x2F;&#x2F;结构体rec中必须定义小于号  1.循环队列1234push(); &#x2F;&#x2F; 从队尾插入pop();  &#x2F;&#x2F; 从队头弹出fr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sort_STL">
-<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/index.html">
+<meta property="og:title" content="queue_STL">
+<meta property="og:url" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/queue_STL/index.html">
 <meta property="og:site_name" content="Lidrizzle&#39;s Blog">
-<meta property="og:description" content="《排序》篇1.sort() 时间复杂度：nlog(n) 它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的">
+<meta property="og:description" content="《queue》篇头文件queue主要包括循环队列queue 和 优先队列 priority_queue两个容器。  #include    12queue&lt;int&gt; q;struct res&#123;...&#125;; queue&lt;rec&gt; q; &#x2F;&#x2F;结构体rec中必须定义小于号  1.循环队列1234push(); &#x2F;&#x2F; 从队尾插入pop();  &#x2F;&#x2F; 从队头弹出fr">
 <meta property="og:locale">
-<meta property="og:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/lambda.png">
-<meta property="article:published_time" content="2024-05-26T03:26:03.000Z">
-<meta property="article:modified_time" content="2024-05-26T08:57:09.325Z">
+<meta property="article:published_time" content="2024-05-27T14:54:19.000Z">
+<meta property="article:modified_time" content="2024-05-27T15:00:08.487Z">
 <meta property="article:author" content="Lidrizzle">
 <meta property="article:tag" content="STL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/lambda.png">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/"/>
+  <link rel="canonical" href="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/queue_STL/"/>
 
 
 
 
 
-  <title>sort_STL | Lidrizzle's Blog</title>
+  <title>queue_STL | Lidrizzle's Blog</title>
   
 
 
@@ -301,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/26/STL/sort_STL/">
+    <link itemprop="mainEntityOfPage" href="https://lidrizzle.github.io/lidrizzle.github.oi/lidrizzle.github.oi/2024/05/27/STL/queue_STL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -318,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sort_STL</h1>
+          <h1 class="post-title" itemprop="name headline">queue_STL</h1>
         
 
         <div class="post-meta">
@@ -330,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-26T11:26:03+08:00">
-                2024-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-27T22:54:19+08:00">
+                2024-05-27
               </time>
             
 
@@ -349,9 +347,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/#comments" itemprop="discussionUrl">
+                <a href="/lidrizzle.github.oi/2024/05/27/STL/queue_STL/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2024/05/26/STL/sort_STL/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2024/05/27/STL/queue_STL/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -373,7 +371,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  603
+                  1.2k
                 </span>
               
 
@@ -389,7 +387,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  5
                 </span>
               
             </div>
@@ -410,29 +408,36 @@
       
 
       
-        <h1 id="《排序》篇"><a href="#《排序》篇" class="headerlink" title="《排序》篇"></a>《排序》篇</h1><h3 id="1-sort"><a href="#1-sort" class="headerlink" title="1.sort()"></a>1.sort()</h3><blockquote>
-<p>时间复杂度：nlog(n)</p>
-<p>它对普通的快速排序进行了优化，此外，它还结合了插入排序和推排序。系统会根据你的数据形式和数据量自动选择合适的排序方法，这并不是说它每次排序只选择一种方法，它是在一次完整排序中不同的情况选用不同方法，比如给一个数据量较大的数组排序，开始采用快速排序，分段递归，分段之后每一段的数据量达到一个较小值后它就不继续往下递归，而是选择插入排序，如果递归的太深，他会选择推排序。<br>————————————————</p>
+        <h1 id="《queue》篇"><a href="#《queue》篇" class="headerlink" title="《queue》篇"></a>《queue》篇</h1><p>头文件queue主要包括循环队列queue 和 优先队列 priority_queue两个容器。</p>
+<blockquote>
+<p>#include <queue> </queue></p>
 </blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(first_pointer, first_pointer + n, cmp); <span class="comment">// n:数组长度</span></span><br><span class="line">参数解释： 第一个参数是数组的首地址，一般写上数组名就可以，因为数组名是一个指针常量。第二个参数相对较好理解，即首地址加上数组的长度n（代表尾地址的下一地址）。最后一个参数是比较函数的名称（自定义函数cmp），这个比较函数可以不写，即第三个参数可以缺省，这样sort会默认按数组升序排序。</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">queue&lt;<span class="type">int</span>&gt; q;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">res</span>&#123;...&#125;; queue&lt;rec&gt; q; <span class="comment">//结构体rec中必须定义小于号</span></span><br></pre></td></tr></table></figure>
 
-<p>举例：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">形式:</span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line"><span class="built_in">sort</span>(a,<span class="built_in">begin</span>(), a.<span class="built_in">end</span>()); <span class="comment">// 默认升序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>(), cmp); <span class="comment">//  根据cmp决定</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a[<span class="number">100</span>];</span><br><span class="line"><span class="built_in">sort</span>(a, a + n);</span><br><span class="line">对数组A的<span class="number">0</span>~n<span class="number">-1</span>元素进行升序排序，只要写<span class="built_in">sort</span>(a, a + n);即可；对于向量V也一样，<span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>())即可。</span><br></pre></td></tr></table></figure>
+<h3 id="1-循环队列"><a href="#1-循环队列" class="headerlink" title="1.循环队列"></a>1.循环队列<queue></queue></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">push</span>(); <span class="comment">// 从队尾插入</span></span><br><span class="line"><span class="built_in">pop</span>();  <span class="comment">// 从队头弹出</span></span><br><span class="line"><span class="built_in">front</span>();<span class="comment">// 返回队头元素</span></span><br><span class="line"><span class="built_in">back</span>(); <span class="comment">// 返回队尾元素</span></span><br></pre></td></tr></table></figure>
 
-<p>定义比较函数cmp()：(最常用)</p>
-<ol>
-<li>使用标准库函数</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;()); <span class="comment">// 降序排列</span></span><br><span class="line"><span class="built_in">sort</span>(a, a + n, <span class="built_in">less</span>&lt;<span class="type">int</span>&gt;());    <span class="comment">// 升序排列（默认）</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-数组模拟队列"><a href="#2-数组模拟队列" class="headerlink" title="2.  数组模拟队列"></a>2.  数组模拟队列</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">用一个数组 q 保存数据。</span><br><span class="line"></span><br><span class="line">用 hh 代表队头，q[hh] 就是队头元素， q[hh + <span class="number">1</span>] 就是第二个元素。</span><br><span class="line"></span><br><span class="line">用 tt 代表队尾， q[tt] 就是队尾元素， q[tt + <span class="number">1</span>] 就是下一次入队，元素应该放的位置。</span><br><span class="line"></span><br><span class="line">[hh, tt] 左闭右闭，代表队列中元素所在的区间。</span><br><span class="line"></span><br><span class="line">出队pop：因为 hh 代表队头，[hh, tt] 代表元素所在区间。所以出队可以用 hh++实现，hh++后，区间变为[hh + <span class="number">1</span>, tt]。</span><br><span class="line"></span><br><span class="line">入队push：因为 tt 代表队尾，[hh, tt] 代表元素所在区间。所以入出队可以用 tt++实现，tt++后，区间变为[hh, tt + <span class="number">1</span>], 然后在q[tt+<span class="number">1</span>]位置放入入队元素。</span><br><span class="line"></span><br><span class="line">是否为空empty：[hh, tt] 代表元素所在区间，当区间非空的时候，对列非空。也就是tt &gt;= hh的时候，对列非空。</span><br><span class="line"></span><br><span class="line">询问队头query：用 hh 代表队头，q[hh] 就是队头元素，返回 q[hh] 即可。</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>重载结构体或类的比较运算符</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 情况一：在结构体内部重载</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">student</span> &#123;</span><br><span class="line">    <span class="type">int</span> id;</span><br><span class="line">    string name;</span><br><span class="line">    <span class="type">double</span> grade;</span><br><span class="line">    </span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s) &#123;</span><br><span class="line">        <span class="keyword">return</span> id &gt; s.id; <span class="comment">// 降序排列</span></span><br><span class="line">        <span class="keyword">return</span> id &lt; s.id; <span class="comment">// 升序排列</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>()); <span class="comment">//  ！！！要加上sort()才可以排序使用bool operator &lt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 情况二：在外部重载</span></span><br><span class="line"></span><br><span class="line">vector&lt;student&gt; v;</span><br><span class="line"><span class="type">bool</span> <span class="keyword">operator</span>&lt;(<span class="type">const</span> student&amp; s1, <span class="type">const</span> student&amp; s2) &#123;</span><br><span class="line">    <span class="keyword">return</span> s1.id &gt; s2.id; <span class="comment">//降序排列</span></span><br><span class="line">    <span class="keyword">return</span> s1.id &lt; s2.id; <span class="comment">//升序排列</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100010</span>;</span><br><span class="line"><span class="type">int</span> q[N];</span><br><span class="line"></span><br><span class="line"><span class="comment">//[hh, tt] 之间为队列（左闭右闭）</span></span><br><span class="line"><span class="type">int</span> hh = <span class="number">0</span>;<span class="comment">//队头位置</span></span><br><span class="line"><span class="type">int</span> tt = <span class="number">-1</span>;<span class="comment">//队尾位置</span></span><br><span class="line"><span class="comment">//操作次数</span></span><br><span class="line"><span class="type">int</span> m;</span><br><span class="line"><span class="comment">//操作方式</span></span><br><span class="line">string s;</span><br><span class="line"></span><br><span class="line"><span class="comment">//入队：队尾先往后移动一格，再放入要插入的数据</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">push</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    q[++tt] = x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//出队：队头往后移动一格</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">pop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    hh++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//[hh, tt]表示队列区间，当tt &gt;= hh时，区间不为空</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">empty</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(tt &gt;= hh) cout &lt;&lt; <span class="string">&quot;NO&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;YES&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">//hh指向队头，q[hh]代表队头元素</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">query</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    cout &lt;&lt; q[hh] &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cin &gt;&gt; m;</span><br><span class="line">    <span class="keyword">while</span>(m--)&#123;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="comment">//入队</span></span><br><span class="line">        <span class="keyword">if</span>(s == <span class="string">&quot;push&quot;</span>)&#123;</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            cin &gt;&gt; x;</span><br><span class="line">            <span class="built_in">push</span>(x);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//出队</span></span><br><span class="line">        <span class="keyword">if</span>(s == <span class="string">&quot;pop&quot;</span>)&#123;</span><br><span class="line">            <span class="built_in">pop</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//问空</span></span><br><span class="line">        <span class="keyword">if</span>(s == <span class="string">&quot;empty&quot;</span>)&#123;</span><br><span class="line">            <span class="built_in">empty</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//问队头</span></span><br><span class="line">        <span class="keyword">if</span>(s == <span class="string">&quot;query&quot;</span>)&#123;</span><br><span class="line">            <span class="built_in">query</span>();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-lambda表达式"><a href="#2-lambda表达式" class="headerlink" title="2.  lambda表达式"></a>2.  lambda表达式</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), [&amp;](PII &amp;a, PII &amp;b) &#123;<span class="keyword">return</span> a.y &lt; b.y;&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="3-优先队列"><a href="#3-优先队列" class="headerlink" title="3.  优先队列"></a>3.  优先队列<priority_queue></priority_queue></h3><p>堆的内部是二叉平衡树</p>
+<blockquote>
+<p>​		priority_queue是一种能根据元素优先级进行一系列操作的队列。他和queue不同的就在于我们可以自定义其中数据的优先级, 让优先级高的排在队列前面,优先出队</p>
+<p>​		优先队列具有队列的所有特性，包括基本操作，只是在这基础上添加了内部的一个排序，它本质是一个堆实现的</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//原型</span></span><br><span class="line">priority_queue&lt;Type, Container, Functional&gt;;</span><br><span class="line"><span class="comment">//其中, Type 为数据类型. Container 为保存数据的容器. Functional 为元素比较的方式.</span></span><br><span class="line"><span class="comment">//若不写后面两个参数.容器 默认使用 vector</span></span><br><span class="line"><span class="comment">//比较方式 默认使用 operator &lt; 即优先队列是大顶堆. 队头元素最大</span></span><br></pre></td></tr></table></figure>
 
-<img src="/lidrizzle.github.oi/D:/ChenYintaoBlogs\source\images\ImagesTypora\lambda.png">
+<h4 id="2-1声明a"><a href="#2-1声明a" class="headerlink" title="2.1声明a"></a>2.1声明a</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">priority_queue&lt;<span class="type">int</span>&gt; q;  <span class="comment">//大根堆</span></span><br><span class="line">priority_queue &lt;<span class="type">int</span>, vector&lt;<span class="type">int</span>&gt;, greater&lt;<span class="type">int</span>&gt; &gt; q; <span class="comment">//升序排列, 小根堆</span></span><br><span class="line">priority_queue &lt;<span class="type">int</span>,vector&lt;<span class="type">int</span>&gt;,less&lt;<span class="type">int</span>&gt; &gt;q;     <span class="comment">//降序队列， 大根堆</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2操作"><a href="#2-2操作" class="headerlink" title="2.2操作"></a>2.2操作</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//插入函数</span></span><br><span class="line">q.<span class="built_in">push</span>(k):<span class="comment">//在q的末尾插入k,并排序</span></span><br><span class="line">q.<span class="built_in">emplace</span>(); <span class="comment">//原地构造一个元素并插入队列</span></span><br><span class="line"><span class="comment">//删除函数</span></span><br><span class="line">q.<span class="built_in">pop</span>():<span class="comment">//删除q的第一个元素</span></span><br><span class="line"><span class="comment">//判空函数</span></span><br><span class="line">q.<span class="built_in">empty</span>():<span class="comment">//返回q是否为空，空则返回true</span></span><br><span class="line"><span class="comment">//大小函数</span></span><br><span class="line">q.<span class="built_in">size</span>():<span class="comment">//返回q里元素个数</span></span><br><span class="line"><span class="comment">// 其他</span></span><br><span class="line">q.<span class="built_in">top</span>():<span class="comment">//查询q的第一个元素     //注意：首元素是top();不是front();</span></span><br><span class="line"><span class="built_in">swap</span>();<span class="comment">// 交换内容</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-自定义比较函数"><a href="#4-自定义比较函数" class="headerlink" title="4.  自定义比较函数"></a>4.  自定义比较函数</h3><p>自定义就不能用greater<int>或者less<int>啦，需要自定义比较方式</int></int></p>
+<p>附上链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/file_system/file/content/whole/index/content/6311328/">https://www.acwing.com/file_system/file/content/whole/index/content/6311328/</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="type">int</span> l;</span><br><span class="line">    <span class="type">int</span> r;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">	<span class="type">int</span> l, r;</span><br><span class="line">	<span class="type">bool</span> <span class="keyword">operator</span> &lt; (<span class="type">const</span> node&amp; b) <span class="type">const</span> &#123; <span class="comment">//定义在内部，重载 &lt; 号，最后的const要写上</span></span><br><span class="line">		<span class="keyword">if</span> (l == b.l) <span class="keyword">return</span> r &lt;= b.r;</span><br><span class="line">		<span class="keyword">return</span> l &lt; b.l; <span class="comment">// 从小到大排序，大根堆</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line">priority_queue&lt;node, vector&lt;node&gt; k;</span><br><span class="line"><span class="type">int</span> main() &#123;</span><br><span class="line">	<span class="type">int</span> n; cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i ++ ) &#123;</span><br><span class="line">		<span class="type">int</span> l, r;</span><br><span class="line">		cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line">		k.<span class="built_in">push</span>(&#123;l, r&#125;);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span> (k.<span class="built_in">size</span>()) &#123;</span><br><span class="line">		cout &lt;&lt; k.<span class="built_in">top</span>().l &lt;&lt; <span class="string">&quot; : &quot;</span> &lt;&lt; k.<span class="built_in">top</span>().r &lt;&lt; endl;</span><br><span class="line">		k.<span class="built_in">pop</span>();</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="number">4</span></span><br><span class="line"><span class="comment">// 1 5</span></span><br><span class="line"><span class="comment">// 2 3</span></span><br><span class="line"><span class="comment">// 5 6</span></span><br><span class="line"><span class="comment">// 3 2</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">cmp</span>&#123; <span class="comment">//定义在外部，此时重载()符号</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">operator</span> <span class="params">()</span><span class="params">(<span class="type">const</span> Node&amp; a, <span class="type">const</span> Node&amp; b)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a.l &gt; b.l;<span class="comment">//将l的值由小到大排列，形成Node的小根堆</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -463,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/lidrizzle.github.oi/2024/05/26/STL/set_STL/" rel="next" title="set_STL">
-                <i class="fa fa-chevron-left"></i> set_STL
+              <a href="/lidrizzle.github.oi/2024/05/26/STL/sort_STL/" rel="next" title="sort_STL">
+                <i class="fa fa-chevron-left"></i> sort_STL
               </a>
             
           </div>
@@ -473,8 +478,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/lidrizzle.github.oi/2024/05/27/STL/queue_STL/" rel="prev" title="queue_STL">
-                queue_STL <i class="fa fa-chevron-right"></i>
+              <a href="/lidrizzle.github.oi/2024/05/27/STL/map_STL/" rel="prev" title="map_STL">
+                map_STL <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -620,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8A%E6%8E%92%E5%BA%8F%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《排序》篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-sort"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.sort()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.  lambda表达式</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8Aqueue%E3%80%8B%E7%AF%87"><span class="nav-number">1.</span> <span class="nav-text">《queue》篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.循环队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%95%B0%E7%BB%84%E6%A8%A1%E6%8B%9F%E9%98%9F%E5%88%97"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.  数组模拟队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.  优先队列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1%E5%A3%B0%E6%98%8Ea"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">2.1声明a</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">2.2操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.  自定义比较函数</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -786,9 +791,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/26/STL/sort_STL/';
-          this.page.identifier = '2024/05/26/STL/sort_STL/';
-          this.page.title = 'sort_STL';
+          this.page.url = 'https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/STL/queue_STL/';
+          this.page.identifier = '2024/05/27/STL/queue_STL/';
+          this.page.title = 'queue_STL';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Lidrizzle.disqus.com/embed.js';
