@@ -88,13 +88,13 @@
 <meta property="og:site_name" content="Lidrizzle&#39;s Blog">
 <meta property="og:description" content="数论1.  位运算123&#x2F;&#x2F;取整数n的二进制第k位数 或者说判断整数n二进制第k位是0还是1n &gt;&gt; k &amp; 1;1的二进制中只有第0位是1，当任意一个数x与1做&amp;运算时，无论x二进制数&gt;&#x3D;1上的数是多少，与1的二进制数&gt;&#x3D;1的数做与（&amp;）运算都是0，因为1的二进制位数&gt;&#x3D;1是，其上的数都是0，所以要判断n的二进制第k位数是0还是1时，只需要将">
 <meta property="og:locale">
-<meta property="og:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/image-20240507233326750.png">
+<meta property="og:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/%E6%95%B0%E8%AE%BA/%E6%95%B0%E8%AE%BA/undefined">
 <meta property="article:published_time" content="2024-05-27T15:13:29.000Z">
 <meta property="article:modified_time" content="2024-05-27T15:15:40.309Z">
 <meta property="article:author" content="Lidrizzle">
 <meta property="article:tag" content="NumberTheory">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/D:/ChenYintaoBlogs/source/images/ImagesTypora/image-20240507233326750.png">
+<meta name="twitter:image" content="https://lidrizzle.github.io/lidrizzle.github.oi/2024/05/27/%E6%95%B0%E8%AE%BA/%E6%95%B0%E8%AE%BA/undefined">
 
 
 
@@ -475,7 +475,7 @@
 
 <h4 id="11-试除法求约数"><a href="#11-试除法求约数" class="headerlink" title="11.   试除法求约数"></a>11.   试除法求约数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">slove</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; v;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n / i; i ++ ) &#123;</span><br><span class="line">        <span class="keyword">if</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">            v.<span class="built_in">push_back</span>(i);</span><br><span class="line">            <span class="keyword">if</span> (i != x / i) v.<span class="built_in">push_back</span>(x / i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> &amp;x : v) &#123;</span><br><span class="line">        cout &lt;&lt; x &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="12"><a href="#12" class="headerlink" title="12."></a>12.</h4><img src="/lidrizzle.github.oi/D:/ChenYintaoBlogs\source\images\ImagesTypora\image-20240507233326750.png" alt="image-20240507233326750" style="zoom:67%;">
+<h4 id="12"><a href="#12" class="headerlink" title="12."></a>12.</h4><img src="/lidrizzle.github.oi/2024/05/27/数论/数论/undefined" alt="image-20240507233326750" style="zoom:67%;">
 
 <blockquote>
 <p>未完待续….</p>
