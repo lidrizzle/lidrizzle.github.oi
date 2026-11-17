@@ -6,7 +6,7 @@
   <link href="https://lidrizzle.github.io/lidrizzle.github.oi/atom.xml" rel="self"/>
   
   <link href="https://lidrizzle.github.io/lidrizzle.github.oi/"/>
-  <updated>2026-11-17T08:53:02.542Z</updated>
+  <updated>2026-11-17T09:01:07.956Z</updated>
   <id>https://lidrizzle.github.io/lidrizzle.github.oi/</id>
   
   <author>
@@ -17,43 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Test</title>
-    <link href="https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/Test/"/>
-    <id>https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/Test/</id>
-    <published>2026-11-17T08:43:40.000Z</published>
-    <updated>2026-11-17T08:53:02.542Z</updated>
+    <title>TEST</title>
+    <link href="https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/TEST/"/>
+    <id>https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/TEST/</id>
+    <published>2026-11-17T09:00:31.000Z</published>
+    <updated>2026-11-17T09:01:07.956Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><p>This is a test file!</p>]]></content>
-    
-    
-    <summary type="html">这是一段摘要</summary>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script><p>kdjfskjfklsjfksjfskf</p>]]></content>
     
     
-    
-    <category term="test1" scheme="https://lidrizzle.github.io/lidrizzle.github.oi/categories/test1/"/>
-    
-    
-    <category term="test2" scheme="https://lidrizzle.github.io/lidrizzle.github.oi/tags/test2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux基础指令</title>
-    <link href="https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/Linux%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/"/>
-    <id>https://lidrizzle.github.io/lidrizzle.github.oi/2026/11/17/Linux%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4/</id>
-    <published>2026-11-17T08:20:13.000Z</published>
-    <updated>2026-11-17T08:20:13.112Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\lidrizzle.github.oi\assets\css\APlayer.min.css"><script src="\lidrizzle.github.oi\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\lidrizzle.github.oi\assets\js\Meting.min.js"></script>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;lidrizzle.github.oi&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;lidrizzle</summary>
-      
+    <summary type="html">c</summary>
     
     
     
+    <category term="a" scheme="https://lidrizzle.github.io/lidrizzle.github.oi/categories/a/"/>
+    
+    
+    <category term="b" scheme="https://lidrizzle.github.io/lidrizzle.github.oi/tags/b/"/>
     
   </entry>
   
